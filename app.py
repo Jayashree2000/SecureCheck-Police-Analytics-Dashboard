@@ -8,7 +8,7 @@ def create_connection():
         connection = pymysql.connect(
             host='localhost',
             user='root',
-            password='Pugazh@08',
+            password='1234',
             database='police_db',
             cursorclass=pymysql.cursors.DictCursor
         )
@@ -207,3 +207,4 @@ elif menu == 'Input Form':
             Stop duration: **{stop_duration}**.  
             Vehicle number: **{vehicle_number}**.
             """)
+
