@@ -1,5 +1,7 @@
 
 **SecureCheck** is an interactive Streamlit application powered by **MySQL**, designed to help law enforcement and analysts visualize and understand traffic stop data.
+
+
 🧩 Features
 
 ✅ **Insight Dashboard**
