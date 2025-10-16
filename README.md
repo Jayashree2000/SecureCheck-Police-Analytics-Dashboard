@@ -1,8 +1,10 @@
+# 🚔 SecureCheck Police Analytics Dashboard
 
 **SecureCheck** is an interactive Streamlit application powered by **MySQL**, designed to help law enforcement and analysts visualize and understand traffic stop data.
 
+---
 
-🧩 Features
+## 🧩 Features
 
 ✅ **Insight Dashboard**
 - Run prebuilt SQL queries to analyze violations, demographics, time patterns, and locations.  
@@ -18,6 +20,8 @@
 - Connects directly to a MySQL database (`police_db`) with a table `police_logs`.  
 - Supports data filtering, aggregation, and real-time updates.
 
+---
+
 ## ⚙️ Tech Stack
 
 | Layer | Technology |
@@ -26,5 +30,32 @@
 | Backend | Python (pandas, pymysql) |
 | Database | MySQL |
 | Visualization | Streamlit DataFrame / Markdown |
+| Deployment | GitHub + Streamlit Cloud (optional) |
+
+---
+
+## 🧱 Architecture
+
+          ┌────────────────────────────┐
+          │        User Input          │
+          │  (Streamlit Frontend)      │
+          └─────────────┬──────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────┐
+          │   Business Logic Layer     │
+          │ (SQL Query Engine + Pandas)│
+          └─────────────┬──────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────┐
+          │        MySQL Database       │
+          │  (police_logs table)        │
+          └────────────────────────────┘
+
+
+
+
+
 
 
